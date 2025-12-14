@@ -1,0 +1,49 @@
+{
+  "$help": "https://aka.ms/terminal-documentation",
+  "$schema": "https://aka.ms/terminal-profiles-schema",
+  "copyFormatting": "none",
+  "copyOnSelect": false,
+  "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+  "profiles": {
+    "defaults": {
+      "opacity": 90,
+      "font": {
+        "face": "Cascadia Mono",
+        "size": 12
+      }
+    },
+    "list": [
+      {
+        "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+        "name": "PowerShell",
+        "source": "Windows.Terminal.PowershellCore"
+      },
+      {
+        "guid": "{7de53dad-40ee-4c89-a2b1-b75bb5fcd15c}",
+        "name": "Git Bash",
+        "icon": "C:\\Program Files\\Git\\mingw64\\share\\git\\git-for-windows.ico",
+        "startingDirectory": "%USERPROFILE%",
+        "commandline": "C:\\Program Files\\Git\\bin\\bash.exe -i -l"
+      },
+      {
+        "guid": "{2d52a680-9223-51eb-9bf6-74973db6596f}",
+        "name": "Ubuntu",
+        "source": "Microsoft.WSL"
+      }
+    ]
+  },
+  "keybindings": [
+    {
+      "id": "Terminal.CopyToClipboard",
+      "keys": "ctrl+c"
+    },
+    {
+      "id": "Terminal.PasteFromClipboard",
+      "keys": "ctrl+v"
+    },
+    {
+      "id": "Terminal.DuplicatePaneAuto",
+      "keys": "alt+shift+d"
+    }
+  ]
+}
